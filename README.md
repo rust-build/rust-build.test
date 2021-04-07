@@ -1,1 +1,1 @@
-Tests for https://github.com/Douile/rust-build.action
+Tests for https://github.com/rust-build/rust-build.action
