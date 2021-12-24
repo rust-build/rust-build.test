@@ -30,6 +30,7 @@ jobs:
           ARCHIVE_TYPES: ${{ matrix.archive }}
           PRE_BUILD: "pre_build.sh"
           POST_BUILD: "test/post_build.sh"
+          MINIFY: "yes"
   release_without_not_required:
     name: release ${{ matrix.target }}
     runs-on: ubuntu-latest
