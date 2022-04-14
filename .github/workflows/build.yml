@@ -1,11 +1,14 @@
 on:
   release:
     types: [created]
+  push:
+
 
 jobs:
   release:
     name: release ${{ matrix.target }} (with non-required env)
     runs-on: ubuntu-latest
+    if: github.event_name == "release"
     strategy:
       fail-fast: false
       matrix:
